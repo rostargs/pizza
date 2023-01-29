@@ -85,7 +85,7 @@
 
 		&__list-item {
             transition: color 0.5s;
-            &:hover{
+            & a:hover{
                 color:#7a7676;
             }
             @media(max-width:$breackpoint_laptop){

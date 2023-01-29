@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/scroll.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,20 +14,20 @@
             <div class="events">
                 <div class="events__section-first">
                     <div class="events__item">
-                        <div class="events__title title">
+                        <div class="events__title title" id="cook">
                             HOW WE COOKING
                         </div>
-                        <button class="button events__button">
+                        <a href="more.html"><button class="button events__button">
                             More
-                        </button>
+                        </button></a>
                     </div>
-                    <div class="events__item">
+                    <div class="events__item" id="blog">
                         <div class="events__title title">
                             OUR BLOG
                         </div>
-                        <button class="button events__button">
+                        <a href="more.html"><button class="button events__button">
                             More
-                        </button>
+                        </button></a>
                     </div>
                     <div class="events__paragraph">
                         <div class="head events__header">
@@ -39,46 +40,46 @@
                 </div>
                 <div class="events__section-second">
                     <div class="events__item-second">
-                        <div class="events__title title">
+                        <div class="events__title title" id="twopizza">
                             TWO PIZZA FOR 1 PRICE
                         </div>
-                        <button class="button events__button">
+                        <a href="more.html"><button class="button events__button">
                             More
-                        </button>
+                        </button></a>
                     </div>
                     <div class="events__item-second">
-                        <div class="events__title title">
+                        <div class="events__title title" id="tour">
                             KITCHEN TOUR
                         </div>
-                        <button class="button events__button">
+                        <a href="more.html"><button class="button events__button">
                             More
-                        </button>
+                        </button></a>
                     </div>
                 </div>
                 <div class="events__section-third">
                     <div class="events__item-third">
-                        <div class="events__title title">
+                        <div class="events__title title" id="coffee">
                             FREE COFFEE FOR 3 PIZZA
                         </div>
-                        <button class="button events__button">
+                        <a href="more.html"><button class="button events__button">
                             More
-                        </button>
+                        </button></a>
                     </div>
                     <div class="events__item-third">
-                        <div class="events__title title">
+                        <div class="events__title title" id="social">
                             OUR INSTAGRAM
                         </div>
-                        <button class="button events__button">
+                        <a href="more.html"><button class="button events__button">
                             More
-                        </button>
+                        </button></a>
                     </div>
                     <div class="events__item-third">
-                        <div class="events__title title">
+                        <div class="events__title title" id="whywe">
                             WHERE ARE YOU CHOOSE US?
                         </div>
-                        <button class="button events__button">
+                        <a href="more.html"><button class="button events__button">
                             More
-                        </button>
+                        </button></a>
                     </div>
             </div>
         </div>
@@ -108,6 +109,14 @@
             </div>
         </div>
     </section>
+    <section class="section-constructor" id="constructor">
+        <div class="container">
+            <div class="constructor">
+                <div class="constructor__list"></div>
+                <div class="constructor__pizza"></div>
+            </div>
+        </div>
+    </section>
     <footer class="section-footer">
         <div class="container">
             <div class="footer">
@@ -121,34 +130,34 @@
                         <div class="footer__wrapper">
                             <div class="footer__header">Home</div>
                             <ul class="footer__list">
-                                <li class="list footer__list-item"><a>To Order</a></li>
-                                <li class="list footer__list-item"><a>About us</a></li>
-                                <li class="list footer__list-item"><a>Events</a></li>
-                                <li class="list footer__list-item"><a>Menu</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#order">To Order</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#about">About us</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#events">Events</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#menu">Menu</a></li>
                             </ul>
                         </div>
                         <div class="footer__wrapper">
                             <div class="footer__header">Events</div>
                             <ul class="footer__list">
-                                <li class="list footer__list-item"><a>3 Pizza 1 Free Coffee</a></li>
-                                <li class="list footer__list-item"><a>2 Pizza for 1 Price</a></li>
-                                <li class="list footer__list-item"><a>Kitchen Tour</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#coffee">3 Pizza 1 Free Coffee</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#twopizza">2 Pizza for 1 Price</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#tour">Kitchen Tour</a></li>
                             </ul>
                         </div>
                         <div class="footer__wrapper">
                             <div class="footer__header">Menu</div>
                             <ul class="footer__list">
-                                <li class="list footer__list-item"><a>Show All</a></li>
-                                <li class="list footer__list-item"><a>Seaproducts</a></li>
-                                <li class="list footer__list-item"><a>Vegan</a></li>
-                                <li class="list footer__list-item"><a>Meat</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#all">Show All</a></li>
+                                <li class="list footer__list-item"><a class="link" href="seaproducts">Seaproducts</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#vegan">Vegan</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#meat">Meat</a></li>
                             </ul>
                         </div>
                         <div class="footer__wrapper">
                             <div class="footer__header">About Us</div>
                             <ul class="footer__list">
-                                <li class="list footer__list-item"><a>Our History</a></li>
-                                <li class="list footer__list-item"><a>Why We?</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#blog">Our History</a></li>
+                                <li class="list footer__list-item"><a class="link" href="#whywe">Why We?</a></li>
                             </ul>
                         </div>
                     </div>
