@@ -1,0 +1,95 @@
+.about {
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	@media(max-width:$breackpoint_laptop){
+		padding-top: 65px;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+		// .about__item
+
+		&__item {
+		}
+
+		// .about__left
+		&__left{
+			padding-top: 23px;
+			@media(max-width:$breackpoint_laptop){
+				padding-left: 80px;
+			}
+			@media(max-width:$breackpoint_sm){
+				padding-left: 0px;
+			}
+		}
+		&__right{
+			position: relative;
+		}
+
+		// .about__header
+
+		&__header {
+			@media(max-width:$breackpoint_sm){
+				font-size: 48px;
+			}
+		}
+
+		// .about__description
+
+		&__description {
+			padding-top: 23px;
+			@media(max-width:$breackpoint_sm){
+				font-size: 14px;
+			}
+		}
+
+		// .about__image
+
+		&__image {
+			max-width: 450px;
+			& img{
+				width: 100%;
+			}
+		}
+
+		// .about__pizza
+
+		&__pizza { 
+			display: flex;
+			align-items: center;
+			min-width: 220px;
+			margin-right: -50px;
+			&::before{
+				content: '';
+				width: 120px;
+				height: 50px;
+				background: url(../img/aboutUs/trap.svg) no-repeat;
+
+				@media (max-width:$breackpoint_xxl) {
+					display: none;
+				}
+			}
+			@media(max-width:$breackpoint_laptop){
+				margin-right: 0px;
+			}
+			@media(max-width:$breackpoint_small){
+				margin-right: 0px;
+			}
+			& img{
+				width: 100%;
+				@media(max-width:$breackpoint_laptop){
+					display: flex;
+					justify-content: center;
+					margin-left: -10px;
+					margin-right: 0px;
+				}
+				@media(max-width:$breackpoint_small){
+					margin-left: -5px;
+					margin-right: 0px;
+				}
+			}  
+        }
+		
+}
+

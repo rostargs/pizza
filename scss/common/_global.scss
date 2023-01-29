@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    font-family: "Muller";
+}
+.container{
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+/*Events*/
+.title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25.0926px;
+    line-height: 108.5%;
+    color: #FFFFFF;
+    max-width: 171px;
+}
+.button{
+    width: 204px;
+    height: 38px;
+    background: var(--button);
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 15.3846px;
+    line-height: 108.5%;
+    color: #FFFFFF;
+}
+.head{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 69.1697px;
+    line-height: 109.5%;
+    color: #FFFFFF;
+}
+.description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    color: var(--grey);
+    max-width: 427px;
+}
+
+/*---footer---*/
+.list{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.7249px;
+    line-height: 125.68%;
+    letter-spacing: -0.02em;
+    color: #515151;
+}

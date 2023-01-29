@@ -1,0 +1,14 @@
+/*common*/
+@import "common/reset";
+@import "common/root";
+@import "common/fonts";
+@import "common/vars";
+@import "common/global";
+
+
+/*components*/
+@import "components/events.scss";
+@import "components/about.scss";
+@import "components/footer.scss";
+@import "components/more.scss";
+
