@@ -82,6 +82,9 @@
                   background-position: right;
                   outline: none;
                   background-size: 30px;
+                  @media(max-width:340px){
+                        font-size: 13px;
+                  }
 
                   &-wrapper{
                         min-width: 410px;
@@ -89,8 +92,12 @@
                         background: var(--button);
 
                         @media(max-width:$breackpoint_phone){
-                              font-size: 40px;
-                              min-width: 320px;
+                              font-size: 50px;
+                              min-width: 340px;
+                        }
+                        @media(max-width:340px){
+                              font-size: 50px;
+                              min-width: 290px;
                         }
                   }
         }
@@ -108,6 +115,9 @@
                   padding: 15px 30px;
                   max-width: 60%;
                   height: auto;
+                  @media(max-width:340px){
+                        padding: 15px 15px;
+                  }
 		}
 
         // .information__social 

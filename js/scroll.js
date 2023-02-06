@@ -1,5 +1,5 @@
 const links = document.querySelectorAll('.link');
-console.log(links);
+//console.log(links);
 
 links.forEach(link => {
     link.addEventListener('click', (event) => {

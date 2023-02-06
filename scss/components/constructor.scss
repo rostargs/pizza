@@ -1,0 +1,257 @@
+.section-constructor {
+    padding-top: 20px;
+}
+.constructor {
+
+		// .constructor__wrapper
+
+		&__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media(max-width:1020px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+		}
+
+		// .constructor__left
+
+		&__left {
+		}
+
+		// .constructor__list
+
+		&__list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+		}
+
+		// .constructor__list-item
+
+		&__list-item {
+            
+		}
+
+		// .constructor__button
+
+		&__button {
+            background: transparent;
+            outline: none;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 44px;
+            color: #FFF;
+            font-weight: 700;
+            width: 100%;
+            text-align: left;
+            @media (max-width:$breackpoint_phone) {
+                font-size: 30px;
+                line-height: 38px;
+            }
+
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' fill='%23ffffff' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 240.835 240.835' style='enable-background:new 0 0 240.835 240.835;' xml:space='preserve'%3E%3Cg%3E%3Cpath id='Expand_Less' d='M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155 c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155 L129.007,57.819z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            outline: none;
+            background-size: 30px;
+            &-wrapper{
+                display: flex;
+                align-items: center;
+                min-width: 490px;
+                height: 60px;
+                background: var(--button);
+                border-radius: 10px;
+                padding: 0 10px;
+
+                @media (max-width:520px) {
+                    min-width: 400px;
+                }
+                @media (max-width:$breackpoint_phone) {
+                    min-width: 300px;
+                }
+            }
+		}
+        &__button-active {
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='451.847px' height='451.847px' viewBox='0 0 451.847 451.847' style='enable-background:new 0 0 451.847 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+        }
+
+		// .constructor__choose
+
+		&__choose {
+            padding-top: 10px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+		}
+
+		// .constructor__block
+
+		&__block {
+            position: relative;
+            width: 100px;
+            height: 125px;
+		}
+
+		// .constructor__choose-item
+
+		&__choose-item {
+            width: 100%;
+            height: 100%;
+            background: #FFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+            &:hover{
+                border: 2px solid orange;
+            }
+		}
+
+		// .constructor__choose-image
+
+		&__choose-image {
+            padding-top: 5px;
+            & img{
+                max-width: 63px;
+                height: 65px;
+            }
+		}
+
+		// .constructor__choose-name
+
+		&__choose-name {
+            padding-top: 4px;
+            font-weight: 500;
+            font-size: 13px;
+		}
+
+		// .constructor__choose-price
+
+		&__choose-price {
+            padding-top: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 109.5%;
+		}
+
+		// .constructor__choose-input
+
+		&__choose-input {
+            position: absolute;
+            top: 5px;
+            right: 2px;
+		}
+
+		// .constructor__right
+
+		&__right {
+            position: relative;
+
+            @media (max-width:1020px) {
+                margin-top: 40px;
+            }
+
+            &-basis{
+                
+                @media(max-width: 360px){
+                    display: none;
+                }
+            }
+
+            & label{
+                & img{
+                    @media(max-width: 360px){
+                        display: none;
+                    }
+                }
+            }
+		}
+        &__pizza{
+            &-item{
+                top: 45px;
+                right: 50px;
+                position: absolute;
+            }
+        }
+
+        // .constructor__bottom 
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 70px;
+
+            @media (max-width:$breackpoint_laptop){
+                display: flex;
+                flex-direction: column;
+            }
+            @media(max-width: 360px){
+                padding-top: 0;
+            }
+        }
+
+        &__totalprice{
+            font-weight: 700;
+            font-size: 40px;
+            color: #FFF;
+            @media (max-width:520px) {
+                font-size: 34px;
+            }
+            @media(max-width: 360px){
+             font-size: 28px;
+            }
+        }
+
+        &__btns{
+            display: flex;
+            flex-direction: row;
+            @media (max-width:$breackpoint_laptop){
+                padding-top: 20px;
+            }
+        }
+
+        &__clear{
+            margin-right: 20px;
+            transition: transform 0.5s;
+            &:hover{
+                transform: scale(0.95);
+            }
+
+            @media (max-width:520px) {
+                width: 160px;
+            }
+            @media(max-width: 360px){
+                width: 130px;
+            }
+        }
+
+        &__create{
+            transition: transform 0.5s;
+            &:hover{
+                transform: scale(0.95);
+            }
+            @media (max-width:520px) {
+                width: 160px;
+            }
+            @media(max-width: 360px){
+                width: 130px;
+            }
+        }
+        
+}
+.price{
+
+}
+.active{
+    border: 2px solid orange;
+}
+.hidden{
+    display: none;
+}

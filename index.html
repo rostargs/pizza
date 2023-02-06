@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/scroll.js" defer></script>
+    <script src="./js/constructorPizza.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -112,8 +113,226 @@
     <section class="section-constructor" id="constructor">
         <div class="container">
             <div class="constructor">
-                <div class="constructor__list"></div>
-                <div class="constructor__pizza"></div>
+                <div class="constructor__wrapper">
+                    <div class="constructor__left">
+                        <ul class="constructor__list">
+                            <li class="constructor__list-item">
+                                <div class="constructor__button-wrapper">
+                                    <button class="constructor__button" type="button">
+                                        Meat
+                                    </button>
+                                </div>
+                                <div class="constructor__choose hidden"> <!--hidden-->
+                                    <div class="constructor__block">
+                                        <label for="check_1" class="constructor__choose-item" data-price="1">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/salami-choose.svg" alt="salami">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Paperonni
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                1$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_1">
+                                    </div>
+                                    <div class="constructor__block">
+                                        <label for="check_2" class="constructor__choose-item" data-price="0.8">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/backon-choose.svg" alt="backon">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Backon
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                0.8$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_2">
+                                    </div>
+                                    <div class="constructor__block">
+                                        <label for="check_3" class="constructor__choose-item" data-price="1.2">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/st-choose.svg" alt="Steak">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Steak
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                1.2$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_3">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="constructor__list-item">
+                                <div class="constructor__button-wrapper">
+                                    <button class="constructor__button" type="button">
+                                        Vegatables
+                                    </button>
+                                </div>
+                                <div class="constructor__choose hidden"> <!--hidden-->
+                                    <div class="constructor__block">
+                                        <label for="check_4" class="constructor__choose-item" data-price="0.5">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/tomatoes-choosr.svg" alt="tomatoes">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Tomatoes
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                0.5$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_4">
+                                    </div>
+                                    <div class="constructor__block">
+                                        <label for="check_5" class="constructor__choose-item" data-price="0.6">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/mashrooms-choose.svg" alt="salami">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Mashrooms
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                0.6$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_5">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="constructor__list-item">
+                                <div class="constructor__button-wrapper">
+                                    <button class="constructor__button" type="button">
+                                        Cheese
+                                    </button>
+                                </div>
+                                <div class="constructor__choose hidden"> <!--hidden-->
+                                    <div class="constructor__block">
+                                        <label for="check_6" class="constructor__choose-item" data-price="0.65">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/cheese-slice.svg" alt="cheese">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Cheese slices
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                0.65$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_6">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="constructor__list-item">
+                                <div class="constructor__button-wrapper">
+                                    <button class="constructor__button" type="button">
+                                        Sea products
+                                    </button>
+                                </div>
+                                <div class="constructor__choose hidden"> <!--hidden-->
+                                    <div class="constructor__block">
+                                        <label for="check_7" class="constructor__choose-item" data-price="1.5">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/shrimp.svg" alt="shrimp">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Shripms
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                1.5$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_7">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="constructor__list-item">
+                                <div class="constructor__button-wrapper">
+                                    <button class="constructor__button" type="button">
+                                        Others
+                                    </button>
+                                </div>
+                                <div class="constructor__choose hidden"> <!--hidden-->
+                                    <div class="constructor__block">
+                                        <label for="check_8" class="constructor__choose-item" data-price="0.3">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/olive.svg" alt="olive">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Olives
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                0.3$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_8">
+                                    </div>
+                                    <div class="constructor__block">
+                                        <label for="check_9" class="constructor__choose-item" data-price="0.15">
+                                            <span class="constructor__choose-image">
+                                                <img src="./img/constructor/onion.svg" alt="onion">
+                                            </span>
+                                            <span class="constructor__choose-name">
+                                                Onion rings
+                                            </span>
+                                            <span class="constructor__choose-price">
+                                                0.15$
+                                            </span>
+                                        </lable>
+                                        <input type="checkbox" class="constructor__choose-input" id="check_9">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="constructor__right">
+                        <img class="constructor__right-basis" src="./img/constructor/osnova.png" alt="pizza basis">
+                        <label for="check_1">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/paperoni.svg" alt="paperoni">
+                        </label>
+                        <label for="check_2">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/backon.svg" alt="backon">
+                        </label>
+                        <label for="check_3">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/bq.svg" alt="bq">
+                        </label>
+                        <label for="check_4">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/tomatoes.svg" alt="tomatoes">
+                        </label>
+                        <label for="check_5">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/mashrooms.svg" alt="mashrooms">
+                        </label>
+                        <label for="check_6">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/cheese.svg" alt="cheese">
+                        </label>
+                        <label for="check_7">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/shrimps-choose.svg" alt="shreemps">
+                        </label>
+                        <label for="check_8">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/olives-choose.svg" alt="olives">
+                        </label>
+                        <label for="check_9">
+                            <img class="constructor__pizza-item hidden" src="./img/constructor/onion-choose.svg" alt="onion rings">
+                        </label>
+                    </div>
+                </div>
+                <div class="constructor__bottom">
+                    <div class="constructor__totalprice">
+                       Total price: <span class="price">3.00</span>$
+                    </div>
+                    <div class="constructor__btns">
+                        <button class="button constructor__clear">
+                            Clear
+                        </button>
+                        <button class="button constructor__create">
+                            Create
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

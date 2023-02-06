@@ -1,6 +1,7 @@
 .section-footer {
     background: var(--footer);
     min-height: calc(437px - 140px);
+    margin-top: 40px;
     @media(max-width:$breackpoint_laptop){
         margin-top: 58px;
     }
