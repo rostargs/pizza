@@ -1,0 +1,93 @@
+.modal-popup{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    border-radius: 48px;
+    position: relative;
+
+    @media(max-width:$breackpoint_sm){
+        width: 380px;
+    }
+    @media(max-width:$breackpoint_phone){
+        width: 300px;
+        height: 270px;
+    }
+
+    &__container{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 600px;
+        height: 300px;
+        @media(max-width:$breackpoint_sm){
+            width: 380px;
+        }
+        @media(max-width:$breackpoint_phone){
+            width: 300px;
+            height: 270px;
+        }
+    }
+    // .popup__success
+
+    &__success {
+        margin-top: -120px;
+        @media(max-width:$breackpoint_phone){
+            margin-top: -80px;
+        }
+    }
+
+    // .popup__text
+
+    &__text {
+        padding-top: 50px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #32BA7C;
+        @media(max-width:$breackpoint_phone){
+            padding-top: 30px;
+        }
+    }
+
+    // .popup__button
+
+    &__button {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 60px;   
+        background: #32BA7C;
+        border-radius: 21px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFFFFF;
+        transition: transform 0.5s;
+        &:hover{
+            transform: scale(0.95);
+        }
+        @media(max-width:$breackpoint_phone){
+            width: 200px;
+            font-size: 34px;
+        }
+    }
+}
+
