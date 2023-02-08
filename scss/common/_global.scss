@@ -6,6 +6,7 @@ body{
     height: 100vh;
     background: var(--background);
     font-family: "Muller";
+    overflow-x: hidden;
 }
 .container{
     max-width: $container;

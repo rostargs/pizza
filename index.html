@@ -11,15 +11,75 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal-popup">
-        <div class="popup__container">
-            <div class="popup">
-                <div class="popup__success">
-                    <img src="./img/popup/checked 1.svg" alt="cheked">
+    <button class="login">Login</button>
+    <div class="login-menu">
+        <div class="login">
+            <div class="login__container">
+                <div class="login__left">
+                    <h2 class="login__left-title">Pizza</h2>
+
+                    <div class="login__left-description">
+                        Order or create your own pizza
+                    </div>
+                    <div class="login__left-image">
+                        <img src="./img/aboutUs/mainpizza.png" alt="pizza">
+                    </div>
+                    <span class="login__author">
+                        Created by Noname
+                    </span>
                 </div>
-                <p class="popup__text">Thank you!</p>
-                <div class="popup__button">
-                    OK
+                <div class="login__right">
+                    <div class="login__right-top">
+                        <p>Not a member?</p><span class="signup-span">Sign up now</span>
+                    </div>
+                    <h1 class="login__form-title" >Sign in to Pizza</h1>
+                    <form class="login__form" id="signin-form">
+                        <div class="login__data">
+                            <label class="login__item-text">Username</label>
+                            <input type="text" class="login__input" id="signin-name">
+                        </div>
+                        <div class="login__password">
+                            <label class="login__item-text">Password</label>
+                            <input type="password" class="login__input" id="signin-password">
+                            <label class="login__forgot" id="forgot-input">Forgot password?</label>
+                        </div>
+                        <button class="login__form-button signin-btn">
+                            Sign in
+                        </button>
+                    </form>
+                    <form class="login__form" id="signup-form">
+                        <div class="login__data">
+                            <label class="login__item-text">Username</label>
+                            <input type="text" class="login__input" id="username-input" !important>
+                        </div>
+                        <div class="login__email">
+                            <label class="login__item-text">Email</label>
+                            <input type="email" class="login__input" id="email-input">
+                        </div>
+                        <div class="login__password">
+                            <div class="login__wrapper">
+                                <label class="login__item-text">Password</label>
+                                <label class="generate">Generate</label>
+                            </div>
+                            <input type="text" class="login__input" id="password-input" !important>
+                        </div>
+                        <button class="login__form-button signup-btn">
+                            Sign up
+                        </button>
+                    </form>
+                    <form class="login__form" id="forgot-form">
+                        <div class="login__password-1">
+                            <label class="login__item-text">New password</label>
+                            <input type="password" class="login__input" id="signin-password-1">
+                        </div>
+                        <div class="login__password">
+                            <label class="login__item-text">Verify password</label>
+                            <input type="password" class="login__input" id="signin-password-2">
+                        </div>
+                        <button class="login__form-button" id="change-btn">
+                            Change
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

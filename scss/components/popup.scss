@@ -1,93 +1,258 @@
-.modal-popup{
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
+.login-menu {
+      display: none;
 }
-.popup {
+.login {
+    color: white;
+		// .login__container
+
+		&__container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(2,1fr);
+
+            @media(max-width:$breackpoint_laptop){
+                  grid-template-columns: 1fr;
+              }
+		}
+
+		// .login__left
+
+		&__left {
+            width: 100%;
+            height: 100vh;
+            background: #D9D9D9;
+            padding: 30px 110px;
+
+            @media(max-width:$breackpoint_descktop){
+                  padding: 30px 50px;
+            }
+            @media(max-width:$breackpoint_laptop){
+                  display: none; 
+            }
+		}
+
+		// .login__left-title
+
+		&__left-title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            /* identical to box height */
+
+            letter-spacing: 0.35em;
+
+            color: #000000;
+		}
+
+		// .login__left-description
+
+		&__left-description {
+            padding-top: 45px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            /* identical to box height */
+            
+            letter-spacing: 0.03em;
+            
+            color: #000000;
+		}
+
+		// .login__left-image
+
+		&__left-image {
+            & img{
+                width: 520px;
+                margin-left: -70px;
+                filter: drop-shadow(-15px 21px 68px rgba(103, 25, 0, 0.23));
+
+                @media(max-width:$breackpoint_descktop){
+                    width: 450px;
+                    margin-left: -60px;
+                }
+            }
+		}
+
+		// .login__author
+
+		&__author {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            
+            color: #000000;
+		}
+
+		// .login__right
+
+		&__right {
+            width: 100%;
+            min-height: 100vh;
+            overflow-y: auto;
+            background: var(--footer);
+            display: flex;
+            flex-direction: column;
+            padding: 30px 110px;
+
+            @media(max-width:$breackpoint_descktop){
+                  padding: 30px 70px;
+            }
+            @media(max-width:$breackpoint_phone){
+                  padding: 30px 10px;
+            }
+
+
+		}
+
+		// .login__right-top
+
+		&__right-top {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+		}
+
+		// .login__form-title
+
+		&__form-title {
+            padding-top: 83px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            /* identical to box height */
+            
+            
+            color: #FFFFFF;
+            
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+
+            // .login__form
+
+            &__form {
+                  padding-top: 40px;
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+            }
+
+            // .login__data
+
+            &__data {
+                  width: 100%;
+            }
+            &__email{
+                  width: 100%;
+                  padding-top: 25px;
+            }
+            &__password {
+                  width: 100%;
+                  padding-top: 25px;
+            }
+
+            // .login__item-text
+
+            &__item-text {
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 29px;
+            }
+            
+            &__wrapper{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+            }
+            // .login__input
+
+            &__input {
+                  width: 100%;
+                  height: 55px;
+                  border-radius: 12px;
+                  padding: 10px 20px;
+                  min-width: 300px;
+                  background: #D9D9D9;
+                  box-shadow: -13px 9px 18px 7px rgba(231, 202, 202, 0.25);
+                  &:focus{
+                        outline: 0;
+                  }
+            }
+
+            &__forgot{
+                  padding-top: 10px;
+                  display: flex;
+                  justify-content: right;
+                  color: #0060df;
+                  text-decoration: underline;
+                  cursor: pointer;
+            }
+
+            // .login__form-button
+
+            &__form-button {
+                  margin-top: 25px;
+                  width: 200px;
+                  height: 50px;
+                  background: #D9D9D9;
+                  border-radius: 37px;
+                  font-weight: 700;
+                  font-size: 20px;
+                  line-height: 24px;
+                  letter-spacing: 0.03em;
+                  cursor: pointer;
+                  transition: transform 0.5s;
+                  @media(max-width:$breackpoint_phone){
+                        width: 170px;
+                        height: 50px;
+                        font-size: 16px;
+                  }
+
+                  &:hover{
+                        transform: scale(0.95);
+                  }
+            }
+}
+.signin-form {
+}
+        
+.signup-span {
+    color: #0060df;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.span-wrapper {
+    width: 100%;
+    padding-top: 33px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 600px;
-    height: 300px;
-    background-color: #FFF;
-    position: absolute;
-    top: 0;
-    border-radius: 48px;
-    position: relative;
+    justify-content: space-between;
+}
+.generate{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
 
-    @media(max-width:$breackpoint_sm){
-        width: 380px;
-    }
     @media(max-width:$breackpoint_phone){
-        width: 300px;
-        height: 270px;
-    }
-
-    &__container{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 600px;
-        height: 300px;
-        @media(max-width:$breackpoint_sm){
-            width: 380px;
-        }
-        @media(max-width:$breackpoint_phone){
-            width: 300px;
-            height: 270px;
-        }
-    }
-    // .popup__success
-
-    &__success {
-        margin-top: -120px;
-        @media(max-width:$breackpoint_phone){
-            margin-top: -80px;
-        }
-    }
-
-    // .popup__text
-
-    &__text {
-        padding-top: 50px;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
-        color: #32BA7C;
-        @media(max-width:$breackpoint_phone){
-            padding-top: 30px;
-        }
-    }
-
-    // .popup__button
-
-    &__button {
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 270px;
-        height: 60px;   
-        background: #32BA7C;
-        border-radius: 21px;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
-        color: #FFFFFF;
-        transition: transform 0.5s;
-        &:hover{
-            transform: scale(0.95);
-        }
-        @media(max-width:$breackpoint_phone){
-            width: 200px;
-            font-size: 34px;
-        }
+      font-size: 16px;
     }
 }
-
+#signin-form{
+      // display: none;
+}
+#signup-form{
+      display: none;
+}
+#forgot-form{
+      display: none;
+}
+.error{
+      border: 2px solid #BD3F3F;
+      box-shadow: -18px 12px 6px rgba(255, 0, 0, 0.25);
+}
+.correct{
+      border: 2px solid #166110;
+      box-shadow: -18px 12px 6px rgba(22, 97, 16, 0.25);
+}
