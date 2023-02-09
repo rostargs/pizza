@@ -107,6 +107,7 @@ body {
   margin: 0 auto;
   padding: 0 25px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /*Events*/
@@ -655,8 +656,8 @@ body {
   background: transparent;
   outline: none;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 40px;
   color: #FFF;
   font-weight: 700;
   width: 100%;
@@ -666,11 +667,11 @@ body {
   background-size: contain;
   background-position: right;
   outline: none;
-  background-size: 30px;
+  background-size: 25px;
 }
 @media (max-width: 424px) {
   .constructor__button {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 38px;
   }
 }
@@ -681,7 +682,7 @@ body {
   height: 60px;
   background: var(--button);
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 @media (max-width: 520px) {
   .constructor__button-wrapper {
@@ -810,6 +811,9 @@ body {
 .constructor__clear {
   margin-right: 20px;
   transition: transform 0.5s;
+  color: #FF612E;
+  font-weight: 700;
+  background: #FFF;
 }
 .constructor__clear:hover {
   transform: scale(0.95);
@@ -826,6 +830,9 @@ body {
 }
 .constructor__create {
   transition: transform 0.5s;
+  color: #FF612E;
+  font-weight: 700;
+  background: #FFF;
 }
 .constructor__create:hover {
   transform: scale(0.95);
@@ -994,8 +1001,7 @@ body {
   padding-top: 10px;
   display: flex;
   justify-content: right;
-  color: #0060df;
-  text-decoration: underline;
+  color: #FF612E;
   cursor: pointer;
 }
 .login__form-button {
@@ -1023,8 +1029,7 @@ body {
 }
 
 .signup-span {
-  color: #0060df;
-  text-decoration: underline;
+  color: #FF612E;
   cursor: pointer;
 }
 
