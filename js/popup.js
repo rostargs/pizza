@@ -106,7 +106,7 @@ changePass.addEventListener('click',(event) => {
 
     const user = JSON.parse(localStorage.getItem('auth'));
 
-    if(enterPass.value && verifyPass.value){
+    if(enterPass.value && enterPass.value.length > 8 && verifyPass.value){
         const newUser = {
             newpass: enterPass.value,
             verifypass:verifyPass.value
@@ -137,6 +137,10 @@ changePass.addEventListener('click',(event) => {
             enterPass.classList.add('error');
             verifyPass.classList.add('error');
         }
+    }
+    if(enterPass.value && enterPass.value.length < 8){
+        enterPass.classList.add('error');
+        verifyPass.classList.add('error');
     }
 })
 
@@ -171,7 +175,7 @@ const generatePassword = (length) => {
 signUp.addEventListener('click',(event) => {
     event.preventDefault();
 
-    if(nameInputSignup.value && emailInputSignup.value && passwordInputSignup.value){
+    if(nameInputSignup.value && emailInputSignup.value && passwordInputSignup.value && passwordInputSignup.value.length > 8){
         const user = {
             name: nameInputSignup.value,
             email: emailInputSignup.value,
@@ -183,6 +187,9 @@ signUp.addEventListener('click',(event) => {
         }
         formSignup.reset();
         
+        passwordInputSignup.classList.add('correct');
+        nameInputSignin.classList.add('correct');
+        emailInputSignup.classList.add('correct');
 
         setTimeout(() =>{
             allItemsArr.forEach(item => {
@@ -190,6 +197,11 @@ signUp.addEventListener('click',(event) => {
             });
             loginMenu.style.display = 'none';
         },200)
+    }
+    if(passwordInputSignup.value && passwordInputSignup.value.length < 8){
+        nameInputSignin.classList.add('correct');
+        emailInputSignup.classList.add('correct');
+        passwordInputSignup.classList.add('error');
     }
 })
 
